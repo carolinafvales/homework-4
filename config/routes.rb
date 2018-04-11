@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'static#home'
+  get 'oooops' => 'static#error'
+  get 'the_magazine' => 'static#about_us'
+  get 'contact_me' => 'static#contact'
   get 'legal/cookies'
   get 'legal/privacy'
   get 'legal/terms'
